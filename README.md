@@ -46,7 +46,7 @@ ___
 
 ## Será um diferencial
 
-- Utilização de bootstrap
+- Não uso de frameworks css
 - Utilização de frameworks como Angular IO (Versão mais recente)
 - Testes unitários
 - Deploy no GitHub Pages ou similar
