@@ -1,0 +1,28 @@
+<app-top-bar></app-top-bar>
+<div class="container-fluid">
+  <div class="form-group">
+    <input type="search" class="form-control me-2"  placeholder="O que está procurando?" [(ngModel)]="filterTerm">
+  </div>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr class="colunas">
+        <th>Produto(s)</th>
+        <th>Descrição</th>
+        <th>Tipo</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userRecords | filter:filterTerm">
+        <td>{{ user.name }}</td>
+        <td>{{user.description}}</td>
+        <td>{{user.type}}</td>
+        <td>{{user.price | currency:'BRL':true:'1.2-2'}}</td>
+        <td>{{user.quantity}} unidade(s)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-down-bar></app-down-bar>
