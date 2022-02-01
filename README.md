@@ -1,52 +1,27 @@
-# Desafio Técnico Desenvolvedor Front End - Téxvn Group
-___
+# ListaProdutos
 
-## Descrição
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
-Faça uma tela de listagem de produtos, sendo possível buscar pelos produtos.
+## Development server
 
-Fique a vontade para determinar informações complementares do produto, porém, é imprescindível ter:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-- Descrição
-- Tipo
-- Preço
-- Quantidade disponível
+## Code scaffolding
 
-Um exemplo de produto válido:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```
-{
-    descricao: "Notebook Gamer",
-    tipo: "Computadores/Informática"
-    preco: 4799,99,
-    quantidadeDisponivel: 7 
-}
-```
+## Build
 
-## Orientações
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Faça um fork deste repositório, assim, desenvolva o que foi proposto, ao finalizado abra um Pull Request para este repositório a partir do seu fork.
-Em seguida envie um e-mail notificando a abertura do Pull Request, informando seu nome de usuário do github, ou o link do Pull Request aberto.
+## Running unit tests
 
-## O que será avaliado?
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Não existe um prazo limite de entrega, no entanto, é considerado um intermédio do que foi entregue e o prazo entre a entrega do desafio até a conclusão do mesmo, assim será avaliado critérios como:
+## Running end-to-end tests
 
-- Conhecimento técnico aplicado sobre os requisitos obrigatórios.
-- A entrega ou não entrega do que foi pedido.
-- Utilização do GIT.
-- A aplicação ou não dos critérios considerados como diferenciais.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Requisitos obrigatórios
+## Further help
 
-- Obrigatório o uso de HTML, CSS/qualquer pré processador CSS e Javascript/Typescript.
-- Utilização de GIT
-- Responsividade dos elementos de tela
-___
-
-## Será um diferencial
-
-- Não uso de frameworks css
-- Utilização de frameworks como Angular IO (Versão mais recente)
-- Testes unitários
-- Deploy no GitHub Pages ou similar
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
