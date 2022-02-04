@@ -1,0 +1,40 @@
+<div class="container">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        
+        <div>
+            <label for="descricao">
+                Descrição:
+            </label>
+            <input id="descricao" type="text" formControlName="descricao">
+        </div>
+        <div>
+            <label for="preco">
+                Preço:
+            </label>
+            <input id="preco" type="text" formControlName="preco">
+        </div>
+        <div>
+            <label for="tipo">
+                Tipo:
+            </label>
+            <input id="tipo" type="text" formControlName="tipo">
+        </div>
+        <div>
+            <label for="quantidadeDisponivel">
+                Quantidade disponivel:
+            </label>
+            <input id="quantidadeDisponivel" type="text" formControlName="quantidadeDisponivel">
+        </div>
+
+        <div>
+            <label for="imagem">
+                Base 64 imagem
+            </label>
+            <input id="imagem" type="text" formControlName="imagem">
+        </div>
+
+        <button type="submit" class="submit">{{ addProduct ? "Adicionar produto" : "Atualizar produto"}}</button>
+    </form>
+    <button type="remove" *ngIf="!addProduct" (click)="remove()" class="remove"> Excluir Produto </button>
+</div>
