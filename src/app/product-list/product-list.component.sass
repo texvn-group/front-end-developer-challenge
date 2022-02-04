@@ -1,0 +1,47 @@
+.card
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    transition: 0.3s
+    border-radius: 5px
+    padding: 2em
+    margin-bottom: 3em
+    &:hover
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+.lower-container
+    padding: 6% 0%
+
+.inner-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 85%
+    &:hover
+        img
+            opacity: 0.3
+        .more
+            opacity: 1
+
+.more 
+  transition: .5s ease
+  opacity: 0
+  transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  text-align: center
+
+
+img
+    border-radius: 5px 5px 0 0
+    &:hover
+        filter: grayscale(100%)
+
+.container
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: 20px
+
+.details
+    h4, p
+        margin: 0
+        padding: 0

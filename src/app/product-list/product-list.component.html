@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card" *ngFor="let product of products">
+        <div class="inner-container" (click)="redirect(product._id)">
+            <img [src]="product.imagem" alt="">
+            <div class="more">Ver mais</div>
+        </div>
+        <div class="lower-container">
+            <div class="details">
+                <h4><b>{{product.descricao}} - {{product.tipo}}</b></h4>
+                <p>R$: {{product.preco | currency}}</p>
+                <p>Quantidade disponivel: {{product.quantidadeDisponivel}}</p>
+            </div>
+        </div>
+    </div>
+</div>
